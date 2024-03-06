@@ -16,7 +16,7 @@ class IconContent extends StatelessWidget {
         Expanded(
           child: FittedBox(
             child: Padding(
-              padding: const EdgeInsets.all(30.0),
+              padding: const EdgeInsets.all(12.0),
               child: Text(titleText ?? '',
                   style: ProjectConstants.iconContentFont),
             ),
