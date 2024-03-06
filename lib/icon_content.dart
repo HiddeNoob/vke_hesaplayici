@@ -3,18 +3,25 @@ import 'package:flutter/material.dart';
 import 'constants.dart';
 
 class IconContent extends StatelessWidget {
-  const IconContent(this.icon,{this.titleText,super.key});
+  const IconContent(this.icon, {this.titleText, super.key});
   final IconData icon;
   final String? titleText;
   @override
   Widget build(BuildContext context) {
-
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(icon,size: 90),
-        SizedBox(height: 10,),
-        Text(titleText ?? '',style: ProjectConstants.iconContentFont),
+        Expanded(child: FittedBox(child: Icon(icon))),
+        Expanded(
+          child: FittedBox(
+            child: Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Text(titleText ?? '',
+                  style: ProjectConstants.iconContentFont),
+            ),
+          ),
+        ),
       ],
     );
   }

@@ -28,12 +28,10 @@ class IncreaseDecraseComponent extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               IconButton(
-                  iconSize: 30,
                   onPressed: onDecrease,
                   icon: Icon(Icons.remove)),
               IconButton(
                   highlightColor: ProjectConstants.activeCardColor,
-                  iconSize: 30,
                   onPressed: onIncrease,
                   icon: Icon(Icons.add)),
             ],

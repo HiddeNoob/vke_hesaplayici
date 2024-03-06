@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 class ProjectConstants{
-  static const numberTextStyle = TextStyle(fontSize: 40,fontFamily: 'Roboto',fontWeight: FontWeight.w800,color: Colors.white);
-  static const double iconCardFontSize = 15;
+  static const numberTextStyle = TextStyle(fontSize: 30,fontFamily: 'Roboto',fontWeight: FontWeight.w800,color: Colors.white);
+  static const double iconCardFontSize = 10;
   static const buttonVariableColor = Color(0xFFADAEB8);
   static const cardTextColor = Color(0xFF8D8E98);
   static const iconContentFont = TextStyle(fontSize: iconCardFontSize,fontFamily: 'Roboto',fontWeight: FontWeight.w500,color: cardTextColor);
