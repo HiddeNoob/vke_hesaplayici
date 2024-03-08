@@ -1,16 +1,16 @@
-# vke_hesaplayici
+# BMI CALCULATOR
 
-A new Flutter project.
+## Screenshots
 
-## Getting Started
+<table>
+  <tr>
+    <td><img src="https://github.com/HiddeNoob/vke_hesaplayici/blob/master/1.png?raw=true" width="300" /></td>
+    <td><img src="https://github.com/HiddeNoob/vke_hesaplayici/blob/master/2.png?raw=true" width="300" /></td>
+  </tr>
+</table>
 
-This project is a starting point for a Flutter application.
+## Building
 
-A few resources to get you started if this is your first Flutter project:
+- Install flutter
+- `flutter run`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
