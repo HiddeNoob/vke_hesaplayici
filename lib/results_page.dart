@@ -30,14 +30,24 @@ class ResultsPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ReusableCard(
                 color: ProjectConstants.activeCardColor,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text(_resultSummaryTitle,style: ProjectConstants.numberTextStyle.copyWith(color: brain.getBMIColor)),
-                    Text('Your BMI: ${brain.getUserBMI.toStringAsFixed(2)}',style: ProjectConstants.numberTextStyle,),
-                    Text('Normal BMI range:\n18,5 - 25 kg/m2',style: ProjectConstants.iconContentFont.copyWith(fontSize: 20),textAlign: TextAlign.center),
-                    Text(_resultSummaryText,style: ProjectConstants.numberTextStyle.copyWith(fontSize: 16),textAlign: TextAlign.center),
-                  ],
+                child: FittedBox(
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 100),
+                        child: Text(_resultSummaryTitle,style: ProjectConstants.numberTextStyle.copyWith(color: brain.getBMIColor)),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 70),
+                        child: Text('Your BMI: ${brain.getUserBMI.toStringAsFixed(2)}',style: ProjectConstants.numberTextStyle,),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 0, 70),
+                        child: Text('Normal BMI range:\n18,5 - 25 kg/m2',style: ProjectConstants.iconContentFont.copyWith(fontSize: 20),textAlign: TextAlign.center),
+                      ),
+                      Text(_resultSummaryText,style: ProjectConstants.numberTextStyle.copyWith(fontSize: 16),textAlign: TextAlign.center),
+                    ],
+                  ),
                 )
               ),
             ),
