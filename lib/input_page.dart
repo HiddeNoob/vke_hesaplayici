@@ -1,3 +1,6 @@
+import 'package:vke_hesaplayici/bottom_calculate_component.dart';
+import 'package:vke_hesaplayici/calculate_bmi.dart';
+import 'package:vke_hesaplayici/results_page.dart';
 import 'icon_content.dart';
 import 'reusable_card.dart';
 import 'package:flutter/material.dart';
@@ -162,23 +165,11 @@ class _InputPageState extends State<InputPage> {
             ],
           )),
           GestureDetector(
-            onTap: null,
-            child: Container(
-              height: 70,
-              width: double.infinity,
-              color: ProjectConstants.bottomContainerColor,
-              child: FittedBox(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Center(
-                      child: Text(
-                    'CALCULATE',
-                    style: ProjectConstants.iconContentFont
-                        .copyWith(color: Colors.white),
-                  )),
-                ),
-              ),
-            ),
+            onTap: (){
+
+              Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage(brain: CalculateBMI(selectedHeight,selectedWeight)),));
+            },
+            child: BottomCalculateComponent(innerText:'CALCULATE')
           )
         ],
       ),
